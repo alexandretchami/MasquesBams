@@ -1,0 +1,68 @@
+{% extends "template_base.html" %} {% load static %} {% block titre %}Page
+d'acceuil{% endblock %} {% block contenu %}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-4">
+            Découvrez nos masques africain de la region de l'ouest du Cameroun
+        </h1>
+        <p class="lead text-muted">
+            Les masques les plus anciens sont en fait ceux des Égyptiens, des Incas et
+            des Aztèques. Les Aztèques avaient également l'habitude, en cas de grandes
+            calamités qui bouleversaient les villages, de couvrir les statues des
+            dieux de masques pour rendre leur pouvoir encore plus efficace.
+        </p>
+        <a href="{% url 'articles:articles' %}" type="button" class="btn btn-primary">
+            Articles
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-lg mb-4">
+            <img class="w-100" src="{% get_media_prefix %}ceremonial_mask.jpg" alt="Elephant Mask" />
+        </div>
+        <div class="col-lg text-justify">
+            <h2>Masque de cérémonie</h2>
+            <hr class="my-4" />
+            <p class="lead">
+                Un masque de cérémonie finement sculpté et polychromé du peuple Bamiléké
+                du Cameroun, Ouest Afrique. Joliment détaillé avec une barbe de bambou,
+                des détails de coquillage et de la paille tissée pour les cheveux qui
+                apparaissentcomme "rangées de maïs"
+            </p>
+        </div>
+    </div>
+    <hr class="my-4" />
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa-solid fa-city fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">City</h2>
+            <p>Visiter les plus belles villes de la region de l'ouest Cameroun.</p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa-solid fa-language fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Langues bamilékées</h2>
+            <p>Tout savoir sur les dialectes utilisées en pays Bamiléké...</p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+            <span class="fa-stack fa-5x">
+                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa-solid fa-person fa-stack-1x"></i>
+            </span>
+            <h2 class="display-6">Démographie</h2>
+            <p>En savoir plus sur les populations de l'ouest Cameroun...</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+body {
+  background-color: #fafafa;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+span i:first-child {
+  color: #e9ecef;
+}
+.container h2 a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+img.logo {
+  border-radius: 30px;
+}
+
+a.nav-link {
+  margin-left: 450%;
+}
