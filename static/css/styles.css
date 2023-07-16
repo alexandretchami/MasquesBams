@@ -9,6 +9,7 @@ body {
 span i:first-child {
   color: #e9ecef;
 }
+
 .container h2 a {
   text-decoration: none;
 }
@@ -25,9 +26,11 @@ textarea {
 }
 
 img.logo {
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 a.nav-link {
-  margin-left: 450%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
 }

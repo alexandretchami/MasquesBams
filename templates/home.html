@@ -1,5 +1,8 @@
-{% extends "template_base.html" %} {% load static %} {% block titre %}Page
-d'acceuil{% endblock %} {% block contenu %}
+{% extends "template_base.html" %}
+{% load static %}
+{% block titre %}
+bamileke forever
+{% endblock %} {% block contenu %}
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container text-center">
@@ -12,8 +15,9 @@ d'acceuil{% endblock %} {% block contenu %}
             calamités qui bouleversaient les villages, de couvrir les statues des
             dieux de masques pour rendre leur pouvoir encore plus efficace.
         </p>
-        <a href="{% url 'articles:articles' %}" type="button" class="btn btn-primary">
-            Articles
+        <a href="https://fr.wikipedia.org/wiki/Masque_traditionnel_africain" target="_blank" type="button"
+            class="btn btn-primary">
+            En savoir plus...
         </a>
     </div>
 </div>
@@ -37,28 +41,35 @@ d'acceuil{% endblock %} {% block contenu %}
     <hr class="my-4" />
     <div class="row">
         <div class="col-lg-4 text-center">
-            <span class="fa-stack fa-5x">
-                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa-solid fa-city fa-stack-1x"></i>
-            </span>
-            <h2 class="display-6">City</h2>
+            <a href="https://fr.wikipedia.org/wiki/Liste_des_communes_de_la_r%C3%A9gion_de_l%27Ouest_au_Cameroun"
+                target="_blank">
+                <span class="fa-stack fa-5x">
+                    <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa-solid fa-city fa-stack-1x"></i>
+                </span>
+            </a>
+            <h2 class="display-6">Villes</h2>
             <p>Visiter les plus belles villes de la region de l'ouest Cameroun.</p>
         </div>
 
         <div class="col-lg-4 text-center">
-            <span class="fa-stack fa-5x">
-                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa-solid fa-language fa-stack-1x"></i>
-            </span>
+            <a href="https://fr.wikipedia.org/wiki/Langues_bamil%C3%A9k%C3%A9es" target="_blank">
+                <span class="fa-stack fa-5x">
+                    <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa-solid fa-language fa-stack-1x"></i>
+                </span>
+            </a>
             <h2 class="display-6">Langues bamilékées</h2>
             <p>Tout savoir sur les dialectes utilisées en pays Bamiléké...</p>
         </div>
 
         <div class="col-lg-4 text-center">
-            <span class="fa-stack fa-5x">
-                <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa-solid fa-person fa-stack-1x"></i>
-            </span>
+            <a href="https://fr.wikipedia.org/wiki/R%C3%A9gion_de_l%27Ouest_(Cameroun)" target="_blank">
+                <span class="fa-stack fa-5x">
+                    <i class="fa-solid fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fa-solid fa-person fa-stack-1x"></i>
+                </span>
+            </a>
             <h2 class="display-6">Démographie</h2>
             <p>En savoir plus sur les populations de l'ouest Cameroun...</p>
         </div>
